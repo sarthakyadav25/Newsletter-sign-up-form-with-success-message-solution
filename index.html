@@ -1,24 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-family: 'Bree Serif', serif;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background-color: hsl(235, 18%, 26%);
+    }
+
+    #main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #container {
+      background-color: hsl(0, 0%, 100%);
+      width: 58vw;
+      height: 70vh;
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 38px;
+    }
+
+    #leftdiv {
+      width: 30vw;
+      height: 60vh;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #fortext h1 {
+      color: hsl(235, 18%, 26%);
+      text-align: center;
+      font-weight: 700;
+      font-size: 50px;
+      margin: 30px 10px;
+    }
+
+    #fortext p {
+      padding-left: 22px;
+      font-size: 16px;
+      margin: 20px 10px;
+    }
+
+
+    #fortext li {
+      list-style: url("assets/images/icon-list.svg");
+      margin: 2px 51px;
+    }
+
+
+
+    #rightdiv {
+      width: 30vw;
+      height: 60vh;
+      /* border: 2px solid green; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #rightdiv img {
+      margin-left: 70px;
+      width: 30vw;
+      height: 65vh;
+    }
+
+    #email {
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding-left: 30px;
+    }
+
+
+
+    #email input {
+      margin-top: 15px;
+      width: 80%;
+      height: 50px;
+      border-radius: 7px;
+      padding-left: 10px;
+    }
+
+    #click {
+      display: block;
+      width: 100%;
+      padding-left: 58px;
+    }
+
+    .btn {
+      background-color: hsl(234, 29%, 20%);
+      color: white;
+      width: 84%;
+      height: 45px;
+      border-radius: 7px;
+    }
+
+    .btn:hover{
+      background-color: tomato;
+      cursor: pointer;
+    }
+
   </style>
 </head>
+
 <body>
 
   <!-- Sign-up form start -->
+  <section id="main">
 
-  Stay updated!
+    <div id="container">
+
+      <div id="leftdiv" class="innercontainer">
+
+        <div class="ldiv" id="fortext">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </div>
+
+        <div class="ldiv" id="email">
+          <h5>Email address</h5>
+          <form>
+            <input type="text" name="email" placeholder="email@company.com">
+          </form>
+        </div>
+
+        <div id="click">
+          <button class="btn">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+
+      <div id="rightdiv" class="innercontiner">
+        <img src="assets/images/illustration-sign-up-desktop.svg">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stay updated!
 
   Join 60,000+ product managers receiving monthly updates on:
 
@@ -35,18 +199,19 @@
 
   <!-- Success message start -->
 
-  Thanks for subscribing!
+  <!-- Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
+  Dismiss message --> -->
 
   <!-- Success message end -->
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
