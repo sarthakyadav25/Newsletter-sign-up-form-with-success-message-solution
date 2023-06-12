@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="/main2.js" defer></script>
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: 'Bree Serif', serif;
+            /* font-family: 'Outfit', sans-serif; */
+        }
+
+        body{
+            background-color: hsl(235, 18%, 26%);
+        }
+
+        #container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main {
+            background-color: white;
+            height: 60vh;
+            width: 55vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 30px;
+        }
+
+        #main:hover{
+            box-shadow: 8px 10px 50px;
+        }
+
+        .msg{
+            margin: 15px 30px;
+        }
+
+        #icon img{
+            height: 52px;
+            width: 55px;
+        }
+
+     
+
+        #thanks h1{
+            font-family: 'Outfit', sans-serif;
+            color: hsl(234, 29%, 20%);
+            font-weight: 700;
+            font-size: 50px;
+        }
+
+        #conf p{
+            font-weight: 400;
+        }
+
+        #btn{
+            width:fit-content;
+            border-radius: 10px;
+        }
+
+        #btn button{
+            padding: 14px 111px;
+            background-color: hsl(234, 29%, 20%);
+            color: white;
+            border-radius: 10px;
+        }
+
+
+        #btn button:hover{
+            background-color: hsl(4, 100%, 67%);
+
+        }
+
+        #btn:hover{
+            box-shadow: 7px 4px 14px;
+        }
+    </style>
+
+<body>
+    <section id="container">
+        <div id="main">
+            <div class="msg" id="icon">
+                <img src="/assets/images/icon-list.svg">
+            </div>
+
+            <div class="msg" id="thanks">
+                <h1>Thanks for subscribing!</h1>
+            </div>
+
+            <div class="msg" id="conf">
+                <p>A confirmation email has been sent to <b>ash@loremcompany</b>.com.
+                    Please open it and click the button inside to confirm your subscription</p>
+            </div>
+
+            <div class="msg" id="btn">
+                <button>Dismiss message</button>
+            </div>
+        </div>
+    </section>
+</body>

@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Outfit:wght@400;700&display=swap"
     rel="stylesheet">
+  <script src="/main.js" defer></script>
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -54,6 +55,10 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 38px;
+    }
+
+    #container:hover{
+      box-shadow: 8px 10px 50px;
     }
 
     #leftdiv {
@@ -112,6 +117,10 @@
       padding-left: 30px;
     }
 
+    #email h5{
+      color: hsl(235, 18%, 26%);
+      font-weight: 700;
+    }
 
 
     #email input {
@@ -137,7 +146,7 @@
     }
 
     .btn:hover{
-      background-color: tomato;
+      background-color: hsl(4, 100%, 67%);
       cursor: pointer;
     }
 
@@ -166,7 +175,7 @@
         <div class="ldiv" id="email">
           <h5>Email address</h5>
           <form>
-            <input type="text" name="email" placeholder="email@company.com">
+            <input type="text" name="email" placeholder="email@company.com" id="inp">
           </form>
         </div>
 
@@ -182,35 +191,9 @@
     </div>
   </section>
 
-  <!-- Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message --> -->
-
-  <!-- Success message end -->
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/sarthak-yadav-51a708260/">Sarthak Yadav</a>.
   </div>
 </body>
 
