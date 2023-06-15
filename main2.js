@@ -1,5 +1,5 @@
 function homepage(){
-    window.location.href = "/index.html";
+    window.location.href = "/";
 }
 
 //Main code

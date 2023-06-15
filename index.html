@@ -34,9 +34,9 @@
       font-family: 'Outfit', sans-serif;
     }
 
-    body {
+    /* body {
       background-color: hsl(235, 18%, 26%);
-    }
+    } */
 
     #main {
       height: 100vh;
@@ -44,6 +44,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: hsl(235, 18%, 26%);
+      ;
     }
 
     #container {
@@ -57,7 +59,7 @@
       border-radius: 38px;
     }
 
-    #container:hover{
+    #container:hover {
       box-shadow: 8px 10px 50px;
     }
 
@@ -93,6 +95,7 @@
 
 
 
+
     #rightdiv {
       width: 30vw;
       height: 60vh;
@@ -117,9 +120,10 @@
       padding-left: 30px;
     }
 
-    #email h5{
+    #email h5 {
       color: hsl(235, 18%, 26%);
       font-weight: 700;
+      margin-top: 15px;
     }
 
 
@@ -145,11 +149,62 @@
       border-radius: 7px;
     }
 
-    .btn:hover{
+    .btn:hover {
       background-color: hsl(4, 100%, 67%);
       cursor: pointer;
     }
 
+    @media (max-width:1000px) {
+      #main {
+        background-color: white;
+        height: 106vh;
+        box-shadow: none;
+        margin: 0;
+        display: block;
+      }
+
+      #container {
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+      }
+
+
+      #rightdiv img {
+        display: none;
+      }
+
+      #rightdiv {
+        background-image: url("assets/images/illustration-sign-up-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+      }
+
+
+      #leftdiv {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #leftdiv h1 {
+        font-size: 40px;
+        text-align: left;
+        margin-left: 30px;
+      }
+
+      #email {
+        margin-top: 20px;
+      }
+
+      .btn {
+        margin: 20px 0px;
+      }
+
+
+    }
   </style>
 </head>
 

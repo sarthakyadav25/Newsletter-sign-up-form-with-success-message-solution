@@ -92,6 +92,36 @@
         #btn:hover{
             box-shadow: 7px 4px 14px 2px;
         }
+
+        @media (max-width:470px){
+            body{
+                background-color: white;
+            }
+
+            #container{
+                width:fit-content
+            }
+
+            #main{
+                height: 80vh;
+                margin-bottom: 20vh;
+                border-radius: 0px;
+            }
+
+            #btn{
+                position:absolute;
+                bottom: 7%;
+                width: 100%;
+                margin : 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            #btn button{
+                padding: 17px 68px;
+            }
+
+        }
     </style>
 
 <body>
